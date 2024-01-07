@@ -1,0 +1,308 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+    color:white;
+}
+html,body{
+    width:100vw;
+    height:100vh;
+    background-color: rgb(16 27 53);
+    overflow-x: hidden;
+
+}
+#nav{
+    width:100vw;
+    height:2vh;
+    /* margin-top: 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    /* background-color: red; */
+}
+#profile{
+    display: flex;
+    align-items: center;
+    /* background-color: aliceblue; */
+}
+
+#profile img{
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+
+}
+#h3{
+    width:100%;
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: 1px solid white;
+
+    /* background-color: aqua; */
+}
+#h3 p{
+    margin-top: 20px;
+    font-size: 1rem;
+}
+#main{
+    width:100%;
+    height:98vh;
+    text-align: center;
+    position: relative;
+    /* height:100%; */
+    /* background-color: lightblue; */
+}
+
+#skills li{
+    list-style: none;
+    margin: 5px;
+    padding: 10px;
+    background-color: gray;
+}
+
+
+
+
+#tour{
+    margin-top: 3%;
+    width:100%;
+    height:80%;
+    display: flex;
+}
+#tour img{
+    width:40%;
+    height:60%;
+    
+}
+#tour-info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-left: 3rem;
+    width:60%;
+    text-align: start;
+    /* background-color: red; */
+} 
+#tour #skills{
+    width:5rem;
+    display: flex;
+
+}
+#tour p{
+    margin-top: 10px;
+    width:30rem;
+}
+#tour h3{
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+#tour-info h4{
+    font-size: 1.5rem;
+}
+#tour-info button{
+    width:13rem;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: hsl(259, 79%, 59%);
+
+}
+
+
+#zillow{
+    /* background-color: red; */
+    width:100%;
+    height:70%;
+    display: flex;
+}
+#zillow img{
+    width:40%;
+    height:60%;
+    
+}
+#zillow-info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-left: 3rem;
+    width:60%;
+    text-align: start;
+} 
+#zillow #skills{
+    width:5rem;
+    display: flex;
+
+}
+#zillow p{
+    margin-top: 10px;
+    width:30rem;
+}
+#zillow h3{
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+#zillow-info h4{
+    font-size: 1.5rem;
+}
+#zillow-info button{
+    width:13rem;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: hsl(259, 79%, 59%);
+
+}
+
+#nike{
+    /* background-color: aliceblue; */
+    width:100%;
+    height:80%;
+    display: flex;
+}
+#nike img{
+    width:40%;
+    height:60%;
+    
+}
+#nike-info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-left: 3rem;
+    width:60%;
+    text-align: start;
+    /* background-color: red; */
+} 
+#nike #skills{
+    width:5rem;
+    display: flex;
+
+}
+#nike p{
+    margin-top: 10px;
+    width:30rem;
+}
+#nike h3{
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+#nike-info h4{
+    font-size: 1.5rem;
+}
+#nike-info button{
+    width:13rem;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: hsl(259, 79%, 59%);
+
+}
+
+
+@media(max-width:900px){
+
+    #profile h3{
+        margin-left:4px;
+    }
+    
+    #tour{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    #tour img{
+        width:40rem;
+        /* height:50%; */
+    }
+
+   
+    #zillow{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    #zillow img{
+        width:40rem;
+        /* height:50%; */
+    }
+
+    #nike{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    #nike img{
+        width:40rem;
+        /* height:50%; */
+    }
+}
+
+@media(max-width:600px){
+
+    #nike{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    #nike img{
+        width:30rem;
+        /* height:50%; */
+    }
+    #zillow img{
+        width:30rem;
+        height:20rem;
+    }
+    #tour img{
+        width:30rem;
+        height:20rem;
+    }
+    #tour-info {
+        align-items: start;
+        margin-right: 3rem;
+        width:25rem;  
+        
+    }
+    #tour-info p{
+        width:26rem;
+    }
+    #zillow-info {
+        align-items: start;
+        margin-right: 3rem;
+        width:25rem;  
+        
+    }
+    #nike-info {
+        align-items: start;
+        margin-right: 3rem;
+        width:25rem;  
+        
+    }
+}
+
+@media(max-width:400px){
+    #tour-info {
+        align-items: start;
+        /* background-color: red; */
+        margin-right: 3rem;
+        width:23rem;  
+        
+    }
+    #tour-info p{
+        width:30rem;
+        /* height:80px; */
+    }
+    #nike-info {
+        align-items: start;
+        /* background-color: red; */
+        margin-right: 3rem;
+        width:23rem;  
+    }
+    #nike-info p{
+        width:30rem;
+        /* height:80px; */
+    }
+    #zillow-info {
+        align-items: start;
+        /* background-color: red; */
+        margin-right: 3rem;
+        width:23rem;  
+    }
+}
